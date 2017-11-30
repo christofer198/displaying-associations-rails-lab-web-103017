@@ -1,1 +1,3 @@
-<a href="songs/1">The Grid</a>
+<%= @artists.each do |artist| %>
+  <%= artist.name %> - <%= artist.count %>
+<% end %>
