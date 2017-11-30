@@ -7,7 +7,7 @@ describe "artists", type:  :feature do
     @artist = Artist.create!(name: "Daft Punk")
     @grid = @artist.songs.create!(title: "The Grid")
     @voyager = @artist.songs.create!(title: "Voyager")
-    binding.binding.pry
+    binding.pry
   end
 
   it "links to the artist's songs by title" do
